@@ -6,7 +6,6 @@ export const AgregarCategoria = ({ setCategoria }) => {
     const [inputValor, setInputValor] = useState("");
 
     const handleInputChange = (e) => {
-        console.log(e.target.value);
         setInputValor(e.target.value);
     }
 
@@ -15,7 +14,7 @@ export const AgregarCategoria = ({ setCategoria }) => {
 
         if (inputValor.trim().length > 2) {
 
-            setCategoria(state => [...state, inputValor]);
+            setCategoria(state => [inputValor, ...state]);
             setInputValor("");
         }
     }

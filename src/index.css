@@ -2,6 +2,11 @@
   font-family: sans-serif;
 }
 
+:root {
+  --animate-delay: 2s;
+  --animate__slow: 3s;
+}
+
 body {
   padding: 60px;
 }
@@ -11,3 +16,28 @@ input {
   font-size: 1.2rem;
   color: gray;
 }
+
+.card {
+  align-content: center;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.card p {
+  padding: 5px;
+  text-align: center;
+}
+
+.card img {
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
